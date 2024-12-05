@@ -4,12 +4,9 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-    <section class="banner">
-        <video autoplay muted loop class="video-bg">
-            <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/Background.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas les vidéos HTML5.
-        </video>
-    </section>
+        <section class="banner">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+        </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
             <article id="" class="story__article">
