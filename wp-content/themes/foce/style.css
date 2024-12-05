@@ -1285,6 +1285,8 @@ textarea {
 
 
 /* test css animation header en attendant théme enfant */
+
+
 .banner {
     position: relative;
     height: 100vh;
@@ -1294,8 +1296,35 @@ textarea {
 
 .banner-logo {
     position: absolute;
-    top: 200px; /* Ajustez en fonction de votre design */
-    left: 350px; /* Ajustez en fonction de votre design */
-    width: 50px; /* Ajustez la taille selon vos besoins */
-    z-index: 1; /* Place l'image au-dessus de la vidéo */
+    top: 200px; 
+    left: 350px; 
+    width: 50px; 
+    z-index: 1; 
+	transform: translate(-50%, -50%);
+    animation: floating 4s infinite ease-in-out; 
+}
+
+
+/* css flottement titre header */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Monte légèrement */
+    }
+    100% {
+        transform: translateY(0); /* Redescend */
+    }
+}
+
+ /* mise en page nouvelle section */
+
+ .nomination {
+    display: flex; /* Active le mode flexbox pour aligner le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    height: 200px; /* Ajuste selon la hauteur désirée pour la section */
+    position: relative; /* Permet d’ajuster la position de l'image avec `left` */
 }

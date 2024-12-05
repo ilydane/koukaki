@@ -71,5 +71,14 @@ get_header();
             </section>
     </main><!-- #main -->
 
+    <!-- test ajout de la nouvelle section -->
+
+    <section id="nomination" class="nomination">
+        <div class="nomination-logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/oscars-logo.png" alt="Oscars Logo">
+        </div>
+</section>
+
+
 <?php
 get_footer();
